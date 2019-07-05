@@ -1,0 +1,41 @@
+function Math(){
+var x = 1,
+	y = 5,
+	z = 8;
+	
+	function add(){
+		
+		x= y + x;
+		return x + z;
+	}
+	
+	
+	function sub(){
+		
+		x= z - y;
+		return x ;
+	}
+	
+function mul(){
+		
+		z = x- y;
+		return z ;
+	}
+	
+return[add,sub,mul];
+
+}
+
+undefined
+var t = Math();
+undefined
+t[0]();
+14
+t[2]();
+1
+t[1]();
+-4
+t[2]();
+-9
+t[0]();
+-8

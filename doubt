@@ -1,0 +1,19 @@
+function genRate(){
+var count = 0;
+function counTer(){
+count++;
+return count;
+}
+return counTer;
+}
+undefined
+genRate()
+ƒ counTer(){
+count++;
+return count;
+}
+genRate();
+ƒ counTer(){
+count++;
+return count;
+}
