@@ -1,0 +1,152 @@
+class Employee{
+constuctor(id,name,basicSalary){
+this.id = id;
+this.name = name;
+this.basicSalary = basicSalary;
+}
+
+hra(){
+this.basicSalary * 0.30;
+}
+
+print(){
+console.log(`
+Id is ${this.id}
+Name is ${this.name}
+Hra is ${this.hra()}
+`);
+}
+
+}
+VM2859:1 Uncaught SyntaxError: Identifier 'Employee' has already been declared
+    at <anonymous>:1:1
+(anonymous) @ VM2859:1
+class EmployeR{
+constuctor(id,name,basicSalary){
+this.id = id;
+this.name = name;
+this.basicSalary = basicSalary;
+}
+
+hra(){
+this.basicSalary * 0.30;
+}
+
+print(){
+console.log(`
+Id is ${this.id}
+Name is ${this.name}
+Hra is ${this.hra()}
+`);
+}
+
+}
+undefined
+var nomb = new EmployeR(1000,'Nomb',25000);
+undefined
+nomb
+EmployeR {}
+class EmployeR2{
+constuctor(id,name,basicSalary){
+this.id = id;
+this.name = name;
+this.basicSalary = basicSalary;
+}
+
+hra(){
+return this.basicSalary * 0.30;
+}
+
+print(){
+console.log(`
+Id is ${this.id}
+Name is ${this.name}
+Hra is ${this.hra()}
+`);
+}
+
+}
+undefined
+var nomb = new EmployeR(1000,'Nomb',25000);
+undefined
+var nomb = new EmployeR2(1000,'Nomb',25000);
+undefined
+nomb
+EmployeR2 {}
+class Customer3{
+constructor(id,name,balance){
+this.id = id;
+this.name = name ;
+this.balance =  balance ;
+}
+
+dis(){
+return this.balance *20;
+}
+
+show(){
+console.log('id is',this.id, 'name is',this.name,'balance is', this.balance,'discount is ', this.dis());
+}
+
+print(){
+console.log(`
+Id is ${this.id}
+Name is ${this.name}
+balance is ${this.balance}
+hra is ${this.hra()}
+
+`)
+}
+
+}
+undefined
+var hari = new Customer3(2000,'Hari ', 20000)
+undefined
+hari
+Customer3 {id: 2000, name: "Hari ", balance: 20000}
+hari.print()
+VM3552:21 Uncaught TypeError: this.hra is not a function
+    at Customer3.print (<anonymous>:21:15)
+    at <anonymous>:1:6
+print @ VM3552:21
+(anonymous) @ VM3673:1
+class Customer4{
+constructor(id,name,balance){
+this.id = id;
+this.name = name ;
+this.balance =  balance ;
+}
+
+dis(){
+return this.balance *0.20;
+}
+
+show(){
+console.log('id is',this.id, 'name is',this.name,'balance is', this.balance,'discount is ', this.dis());
+}
+
+print(){
+console.log(`
+Id is ${this.id}
+Name is ${this.name}
+balance is ${this.balance}
+dis is ${this.dis()}
+
+`)
+}
+
+}
+undefined
+var hari = new Customer4(2000,'Hari ', 20000)
+undefined
+hari
+Customer4 {id: 2000, name: "Hari ", balance: 20000}
+hari.print()
+VM3694:17 
+Id is 2000
+Name is Hari 
+balance is 20000
+dis is 4000
+
+
+undefined

@@ -1,0 +1,146 @@
+function Employee(id, name, basicSalary) {
+	this.id = id; // Instance Var =  Local Var
+	this.name = name;
+	this.basicSalary = basicSalary;
+	/*this.hra = function(){
+	let x = 10;
+	x++;
+	return this.basicSalary * 0.30;
+	}*/
+	// return this;
+}
+undefined
+
+Employee.prototype.hra = function() {
+	return this.basicSalary * 0.30;
+}
+
+
+ƒ () {
+	return this.basicSalary * 0.30;
+}
+Employee.prototype.da = function() {
+	return this.basicSalary * 0.20;
+}
+
+
+ƒ () {
+	return this.basicSalary * 0.20;
+}
+Employee.prototype.ta = function() {
+	return this.basicSalary * 0.10;
+}
+
+ƒ () {
+	return this.basicSalary * 0.10;
+}
+
+Employee.prototype.pf = function() {
+	return this.basicSalary * 0.05;
+}
+
+
+ƒ () {
+	return this.basicSalary * 0.05;
+}
+Employee.prototype.gs = function() {
+	return this.basicSalary + this.hra() + this.da() + this.ta() - this.pf();
+}
+
+ƒ () {
+	return this.basicSalary + this.hra() + this.da() + this.ta() - this.pf();
+}
+Employee.prototype.ns = function() {
+	return this.gs() - (this.gs() * 0.10);
+}
+
+ƒ () {
+	return this.gs() - (this.gs() * 0.10);
+}
+Employee
+ƒ Employee(id, name, basicSalary) {
+	this.id = id; // Instance Var =  Local Var
+	this.name = name;
+	this.basicSalary = basicSalary;
+	/*this.hra = function(){
+	let x = 10;
+	x++;
+	return this.basicSalary…
+Employee.prototype.print= function(){
+console.log(`
+Id is ${this.id}
+Name is ${this.name}
+basicSalary is ${this.basicSalary}
+hra is ${this.hra}
+data is ${this.ta}
+pf is ${this.pf}
+gs is ${this.gs}
+`)
+}
+ƒ (){
+console.log(`  
+Id is ${this.id}
+Name is ${this.name}
+basicSalary is ${this.basicSalary}
+hra is ${this.hra}
+data is ${this.ta}
+pf is ${this.pf}
+gs is ${this.gs}
+`)
+}
+var kisan = new Employee(1003,'kisan',20000);
+undefined
+kisan.print()
+VM316:2   
+Id is 1003
+Name is kisan
+basicSalary is 20000
+hra is function() {
+	return this.basicSalary * 0.30;
+}
+data is function() {
+	return this.basicSalary * 0.10;
+}
+pf is function() {
+	return this.basicSalary * 0.05;
+}
+gs is function() {
+	return this.basicSalary + this.hra() + this.da() + this.ta() - this.pf();
+}
+
+undefined
+Employee.prototype.print= function(){
+console.log(`
+Id is ${this.id}
+Name is ${this.name}
+basicSalary is ${this.basicSalary}
+hra is ${this.hra()}
+data is ${this.ta()}
+pf is ${this.pf()}
+gs is ${this.gs()}
+`)
+}
+ƒ (){
+console.log(`
+Id is ${this.id}
+Name is ${this.name}
+basicSalary is ${this.basicSalary}
+hra is ${this.hra()}
+data is ${this.ta()}
+pf is ${this.pf()}
+gs is ${this.gs()}
+`)
+}
+var kisan = new Employee(1003,'kisan',20000);
+undefined
+kisan.print()
+VM3489:2 
+Id is 1003
+Name is kisan
+basicSalary is 20000
+hra is 6000
+data is 2000
+pf is 1000
+gs is 31000
+
+undefined

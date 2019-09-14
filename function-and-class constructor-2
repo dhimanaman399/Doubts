@@ -1,0 +1,216 @@
+class Customer{
+constructor(id,name,balance){
+this.id = id;
+this.name = name ;
+this.balance =  balance ;
+}
+
+show(){
+console.log('id is',this.id, 'name is',this.name,'balance is', this.balance);
+}
+
+}
+undefined
+var pop = new Customer(1001,'Pop',50000);
+undefined
+show()
+VM1474:1 Uncaught ReferenceError: show is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM1474:1
+pop.show()
+VM1366:9 id is 1001 name is Pop balance is 50000
+undefined
+class Employe{
+constuctor(id,name,basicSalary){
+this.id = id;
+this.name = name;
+this.basicSalary = basicSalary;
+}
+ 
+hra(){
+return this.basicSalary * 0.30;
+}
+
+da(){
+return this.basicSalary * 0.20;
+}
+
+}
+undefined
+var pop = new Employe(1002,'Pop',85000);
+undefined
+pop.hra
+ƒ hra(){
+return this.basicSalary * 0.30;
+}
+pop.hra()
+NaN
+class Employe{
+constuctor(id,name,basicSalary){
+this.id = id;
+this.name = name;
+this.basicSalary = basicSalary;
+}
+ 
+hra(){
+console.log(this.basicSalary * 0.30);
+}
+
+da(){
+console.log(this.basicSalary * 0.20);
+}
+
+}
+VM1966:1 Uncaught SyntaxError: Identifier 'Employe' has already been declared
+    at <anonymous>:1:1
+(anonymous) @ VM1966:1
+class Employee{
+constuctor(id,name,basicSalary){
+this.id = id;
+this.name = name;
+this.basicSalary = basicSalary;
+}
+ 
+hra(){
+console.log(this.basicSalary * 0.30);
+}
+
+da(){
+console.log(this.basicSalary * 0.20);
+}
+
+}
+undefined
+var pop = new Employee(1003,'Pop',99900);
+undefined
+pop.hra()
+VM1973:9 NaN
+undefined
+class Employee{
+constuctor(id,name,basicSalary){
+this.id = id;
+this.name = name;
+this.basicSalary = basicSalary;
+}
+ 
+hra(){
+console.log(this.basicSalary * 0.30);
+},
+
+da(){
+console.log(this.basicSalary * 0.20);
+}
+
+}
+VM2066:10 Uncaught SyntaxError: Unexpected token ,
+class Animal { 
+  constructor(name) {
+    this.name = name;
+  }
+  
+  speak() {
+    console.log(`${this.name} makes a noise.`);
+  }
+}
+
+undefined
+let d = new Dog('Mitzie');
+
+VM2149:1 Uncaught ReferenceError: Dog is not defined
+    at <anonymous>:1:9
+(anonymous) @ VM2149:1
+var d = new Animal('Mitzie');
+
+VM2168:1 Uncaught SyntaxError: Identifier 'd' has already been declared
+    at <anonymous>:1:1
+(anonymous) @ VM2168:1
+var dd = new Animal('Mitzie');
+
+undefined
+dd.speak()
+VM2136:7 Mitzie makes a noise.
+undefined
+class Animal { 
+  constructor(name,breed) {
+    this.name = name;
+this.breed = breed;
+  }
+  
+  speak() {
+    console.log(`${this.name} makes a noise.`);
+  }
+  type() {
+    console.log(`${this.breed} makes a noise.`);
+  }
+}
+
+VM2268:1 Uncaught SyntaxError: Identifier 'Animal' has already been declared
+    at <anonymous>:1:1
+(anonymous) @ VM2268:1
+class AniMal { 
+  constructor(name,breed) {
+    this.name = name;
+this.breed = breed;
+  }
+  
+  speak() {
+    console.log(`${this.name} makes a noise.`);
+  }
+  type() {
+    console.log(`${this.breed} makes a noise.`);
+  }
+}
+
+undefined
+var  dogg = new AniMal('Bruno', 'Pitbull')
+undefined
+dogg.breed
+"Pitbull"
+dogg.type()
+VM2275:11 Pitbull makes a noise.
+undefined
+dogg
+AniMal {name: "Bruno", breed: "Pitbull"}
+pop
+Employee {}
+class Customer2{
+constructor(id,name,balance){
+this.id = id;
+this.name = name ;
+this.balance =  balance ;
+}
+
+show(){
+console.log('id is',this.id, 'name is',this.name,'balance is', this.balance);
+}
+
+}
+
+undefined
+var nomb = new Customer2(5000,'Nomb',25000)
+undefined
+nomb
+Customer2 {id: 5000, name: "Nomb", balance: 25000}
+class Customer3{
+constructor(id,name,balance){
+this.id = id;
+this.name = name ;
+this.balance =  balance ;
+}
+
+dis(){
+return this.balance *20;
+}
+
+show(){
+console.log('id is',this.id, 'name is',this.name,'balance is', this.balance,'discount is ', this.dis());
+}
+
+}
+
+undefined
+var nomb = new Customer3(1000,'Nomb',25000)
+undefined
+nomb.show()
+VM3378:13 id is 1000 name is Nomb balance is 25000 discount is  500000
+undefined
